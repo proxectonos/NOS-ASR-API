@@ -1,0 +1,19 @@
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: #222;
+}
+h1 { font-size: 1.4rem; }
+h2 { font-size: 1.1rem; margin-top: 2rem; }
+form label { display: block; margin: 0.5rem 0; }
+button { padding: 0.5rem 1rem; cursor: pointer; }
+pre {
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+code { background: #eee; padding: 0 0.3em; border-radius: 3px; }

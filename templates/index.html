@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="gl">
+<head>
+<meta charset="utf-8">
+<title>NOS ASR API</title>
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<main>
+  <h1>NOS ASR — Galician Speech-to-Text</h1>
+
+  <section>
+    <h2>Available models</h2>
+    <ul>
+      {% for mid, lang in models.items() %}
+        <li><code>{{ mid }}</code> — {{ lang }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section>
+    <h2>Transcribe</h2>
+    <form id="asr-form">
+      <label>Model ID
+        <select name="model_id">
+          {% for mid, lang in models.items() %}
+            <option value="{{ mid }}">{{ mid }} ({{ lang }})</option>
+          {% endfor %}
+        </select>
+      </label>
+      <label>Audio file
+        <input type="file" name="audio" accept="audio/*" required>
+      </label>
+      <button type="submit">Transcribe</button>
+    </form>
+    <pre id="result"></pre>
+  </section>
+</main>
+
+<script>
+document.getElementById("asr-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const form = e.target;
+  const fd = new FormData(form);
+  const modelId = fd.get("model_id");
+  const out = document.getElementById("result");
+  out.textContent = "Transcribing...";
+  try {
+    const res = await fetch(`/api/asr?model_id=${encodeURIComponent(modelId)}`, {
+      method: "POST",
+      body: fd,
+    });
+    const data = await res.json();
+    out.textContent = JSON.stringify(data, null, 2);
+  } catch (err) {
+    out.textContent = "Error: " + err;
+  }
+});
+</script>
+</body>
+</html>

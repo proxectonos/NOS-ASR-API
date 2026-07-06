@@ -1,0 +1,39 @@
+version: '3.7'
+
+services:
+
+  asr:
+    platform: linux/amd64
+    build:
+      context: .
+      platforms:
+        - linux/amd64
+    command: gunicorn server:app -b :8000 --workers 1 --threads=4 --worker-class=gthread --timeout 300
+    restart: unless-stopped
+    ports:
+      - 5051:8000
+    volumes:
+      - .:/app
+      - ./models:/app/models
+    container_name: asrapi
+    environment:
+      - ASR_API_CONFIG=/app/config.json
+      - MODELS_ROOT=/app/models
+      - USE_CUDA=0  #1 to enable GPU inference
+      - HF_HOME=/app/models/.hf_cache
+    #Remove comment below to enable GPU inference
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1 #set to "all" to use all GPUs
+    #           capabilities: [gpu]
+    #Remove comment above to enable GPU inference
+
+    # networks:
+    #   - api-network
+
+# networks:
+#   api-network:
+#     external: true

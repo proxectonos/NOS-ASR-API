@@ -1,0 +1,12 @@
+Flask>=2.1.2
+gunicorn>=20.1.0; sys_platform != "win32"
+waitress>=2.1.0; sys_platform == "win32"
+torch>=2.1.0
+torchaudio>=2.1.0
+transformers>=4.40.0
+pyctcdecode>=0.5.0
+https://github.com/kpu/kenlm/archive/master.zip
+librosa>=0.10.0
+soundfile>=0.12.1
+numpy>=1.24.0
+huggingface_hub>=0.23.0

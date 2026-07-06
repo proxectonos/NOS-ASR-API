@@ -1,0 +1,14 @@
+{
+    "languages": {"gl": "Galician"},
+    "models": [
+        {
+            "model_id": "nos_asr_gl",
+            "lang": "gl",
+            "model_type": "wav2vec2_lm",
+            "hf_repo": "proxectonos/Nos_ASR-wav2vec2-large-xlsr-53-gl-with-lm",
+            "sampling_rate": 16000,
+            "load": true,
+            "default": true
+        }
+    ]
+}
