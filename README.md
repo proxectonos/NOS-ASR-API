@@ -2,7 +2,7 @@
 
 Dockerized HTTP API for Galician Automatic Speech Recognition.
 
-Wraps the [`proxectonos/Nos_ASR-wav2vec2-large-xlsr-53-gl-with-lm`](https://huggingface.co/proxectonos/Nos_ASR-wav2vec2-large-xlsr-53-gl-with-lm) model from [Proxecto Nós] (https://nos.gal/gl/proxecto-nos) with a small Flask + Gunicorn server.
+Wraps the [`proxectonos/Nos_ASR-wav2vec2-large-xlsr-53-gl-with-lm`](https://huggingface.co/proxectonos/Nos_ASR-wav2vec2-large-xlsr-53-gl-with-lm) model from [Proxecto Nós](https://nos.gal/gl/proxecto-nos) with a small Flask + Gunicorn server.
 
 ## Setup
 
