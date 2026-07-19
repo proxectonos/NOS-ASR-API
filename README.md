@@ -391,8 +391,10 @@ To change the styling of the demo page, edit `static/css/style.css`. To swap the
 
 ## License
 
-GPL-3.0.
+[Apache 2.0.] (https://www.apache.org/licenses/LICENSE-2.0)
 
 ## Acknowledgements
 
-ASR model and language model trained and released by [Proxecto Nós](https://nos.gal/) (CiTIUS / USC). This repository only provides the serving layer; all credit for the underlying speech recognition system goes to the Proxecto Nós team.
+This work is funded by the Ministerio para la Transformación Digital y de la Función Pública - Funded by EU – NextGenerationEU within the framework of the project Desarrollo de Modelos ALIA. (Esta publicación del proyecto Desarrollo de Modelos ALIA está financiada por el Ministerio para la Transformación Digital y de la Función Pública y por el Plan de Recuperación, Transformación y Resiliencia – Financiado por la Unión Europea – NextGenerationEU).
+
+Thanks also to Dimensiona for the technical development of this API.
