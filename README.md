@@ -391,7 +391,7 @@ To change the styling of the demo page, edit `static/css/style.css`. To swap the
 
 ## License
 
-[Apache 2.0.] (https://www.apache.org/licenses/LICENSE-2.0)
+[Apache 2.0.](https://www.apache.org/licenses/LICENSE-2.0)
 
 ## Acknowledgements
 
