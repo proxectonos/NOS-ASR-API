@@ -397,4 +397,4 @@ To change the styling of the demo page, edit `static/css/style.css`. To swap the
 
 This work is funded by the Ministerio para la Transformación Digital y de la Función Pública - Funded by EU – NextGenerationEU within the framework of the project Desarrollo de Modelos ALIA. (Esta publicación del proyecto Desarrollo de Modelos ALIA está financiada por el Ministerio para la Transformación Digital y de la Función Pública y por el Plan de Recuperación, Transformación y Resiliencia – Financiado por la Unión Europea – NextGenerationEU).
 
-Thanks also to Dimensiona for the technical development of this API.
+Thanks also to [Dimensiona](https://www.dimensiona.com/gl/sobre-nos/) for the technical development of this API.
