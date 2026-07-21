@@ -33,13 +33,8 @@ Status legend: `[ ]` todo · `[~]` in progress · `[x]` done · `[!]` blocked
 
 ## Milestone 4 — Polish & release
 
-- [ ] Add `LICENSE` (GPL-3.0)
+- [ ] Add `LICENSE`
 - [ ] CI: lint + Docker build smoke test
 - [ ] Publish image tag (`nos-asr-api:0.1.0`)
 - [ ] Document deployment recipe (compose + reverse proxy)
 
-## Open questions
-
-- [ ] Is there a second ASR variant from Proxecto Nós worth adding? (e.g. without LM)
-- [ ] Streaming inference (websocket) — in scope or separate project?
-- [ ] Long-audio strategy: chunk + stitch vs. full-audio? Memory ceiling?
