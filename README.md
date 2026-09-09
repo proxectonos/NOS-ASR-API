@@ -41,7 +41,7 @@ Once your environment is in place, you must define the models to serve in the `c
 
 ### Available models
 
-Proxecto Nós currently publishes two Galician ASR checkpoints on Hugging Face:
+Proxecto Nós currently publishes two Galician ASR wav2vec checkpoints on Hugging Face:
 
 | `model_id` (suggested)   | `hf_repo`                                                          | `model_type`     | Notes                                                                                          |
 |--------------------------|--------------------------------------------------------------------|------------------|------------------------------------------------------------------------------------------------|
